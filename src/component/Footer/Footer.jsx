@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <h4 className={styles.colTitle}>Company</h4>
             <ul className={styles.links}>
-              <li><a className={styles.link} href="#about">About Us</a></li>
+              <li><a className={styles.link} href="https://www.egypttoursgate.com/about">About Us</a></li>
               <li><a className={styles.link} href="#tours">Tours</a></li>
               <li><a className={styles.link} href="#blog">Blog</a></li>
               <li><a className={styles.link} href="#careers">Careers</a></li>
