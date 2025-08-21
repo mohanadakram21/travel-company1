@@ -182,7 +182,7 @@ export default function Home() {
                       <span className={styles.priceAmount}>$89</span>
                       <span className={styles.pricePeriod}>/person</span>
                     </div>
-                    <NavLink to="/booking" className={styles.bookNowBtn}>
+                    <NavLink to="/book" className={styles.bookNowBtn}>
   Book Now
 </NavLink>                  </div>
                 </div>
@@ -214,7 +214,7 @@ export default function Home() {
                       <span className={styles.priceAmount}>$299</span>
                       <span className={styles.pricePeriod}>/person</span>
                     </div>
-                    <NavLink to="/booking" className={styles.bookNowBtn}>
+                    <NavLink to="/book" className={styles.bookNowBtn}>
   Book Now
 </NavLink>                  </div>
                 </div>
@@ -246,7 +246,7 @@ export default function Home() {
                       <span className={styles.priceAmount}>$65</span>
                       <span className={styles.pricePeriod}>/person</span>
                     </div>
-                    <NavLink to="/booking" className={styles.bookNowBtn}>
+                    <NavLink to="/book" className={styles.bookNowBtn}>
   Book Now
 </NavLink>                  </div>
                 </div>
@@ -278,7 +278,7 @@ export default function Home() {
                       <span className={styles.priceAmount}>$145</span>
                       <span className={styles.pricePeriod}>/person</span>
                     </div>
-                    <NavLink to="/booking" className={styles.bookNowBtn}>
+                    <NavLink to="/book" className={styles.bookNowBtn}>
   Book Now
 </NavLink>                  </div>
                 </div>
@@ -310,8 +310,9 @@ export default function Home() {
                       <span className={styles.priceAmount}>$120</span>
                       <span className={styles.pricePeriod}>/person</span>
                     </div>
-                    <button className={styles.bookNowBtn}>Book Now</button>
-                  </div>
+                    <NavLink to="/book" className={styles.bookNowBtn}>
+  Book Now
+</NavLink>                           </div>
                 </div>
               </div>
             </div>
