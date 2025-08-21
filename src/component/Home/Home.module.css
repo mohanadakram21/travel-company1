@@ -1,0 +1,1338 @@
+.typingAnimation {
+  animation: typing 8s infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    content: 'E|';
+  }
+  10% {
+    content: 'Eg|';
+  }
+  20% {
+    content: 'Egy|';
+  }
+  30% {
+    content: 'Egyp|';
+  }
+  40% {
+    content: 'Egypt|';
+  }
+  50% {
+    content: 'Egypt T|';
+  }
+  60% {
+    content: 'Egypt To|';
+  }
+  70% {
+    content: 'Egypt Tou|';
+  }
+  80% {
+    content: 'Egypt Tour|';
+  }
+  100% {
+    content: 'Egypt Tours|';
+  }
+}
+
+.typingSpan::before {
+  content: 'e|';
+  animation: typing 8s infinite alternate;
+}
+
+span{
+    color: #DEBA58;
+}
+
+/* Travel Tips Section Styles */
+.travelTipsSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sectionTitle1 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 60px;
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Content Grid Layout */
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin: 60px 0;
+}
+
+/* Image Section Styles */
+.imageSection {
+  text-align: center;
+  position: relative;
+}
+
+.travelImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: brightness(1.05) contrast(1.1);
+}
+
+.travelImage:hover {
+  transform: scale(1.02);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1) contrast(1.15);
+}
+
+.imageSection::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 20px;
+  background: linear-gradient(135deg, #DEBA58, #DEBA58);
+  border-radius: 10px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.imageSection::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 15px;
+  background: linear-gradient(135deg, #DEBA58, #DEBA58);
+  border-radius: 8px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.ctaSection {
+  text-align: center;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.ctaSection p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn, .secondaryBtn {
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent;
+  margin-right: 10px;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  color: white;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px #DEBA58(102, 126, 234, 0.4);
+  background: transparent;
+  color: #DEBA58;
+  border-color: #DEBA58;
+
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: #DEBA58;
+  border-color: #DEBA58;
+}
+
+.secondaryBtn:hover {
+  background: #DEBA58;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+  
+  .sectionTitle1 {
+    font-size: 1.8rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+  
+  .imageSection {
+    margin: 0;
+  }
+  
+  .travelImage {
+    border-radius: 15px;
+  }
+  
+  .ctaSection {
+    padding: 40px 20px;
+  }
+  
+  .ctaSection h2 {
+    font-size: 2rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+/* Tour Cards Slider */
+.tourCardsSlider {
+  position: relative;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 0;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 10px 0;
+}
+
+.tourCard {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid #f0f0f0;
+  width: 100%;
+  flex-shrink: 0;
+  flex: 0 0 100%;
+}
+
+.tourCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.cardImageContainer {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tourCard:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.cardBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.cardContent {
+  padding: 30px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.cardHeader h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.3;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 100px;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.ratingText {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.locationIcon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.cardDescription {
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.priceLabel {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.priceAmount {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #DEBA58;
+  line-height: 1;
+}
+
+.pricePeriod {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.bookNowBtn {
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.bookNowBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Slider Navigation */
+.sliderNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sliderBtn {
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.sliderBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.sliderDots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: #DEBA58;
+  transform: scale(1.1);
+}
+
+/* Responsive Design for Slider */
+@media (max-width: 768px) {
+  .tourCardsSlider {
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+  
+  .cardImageContainer {
+    height: 250px;
+  }
+  
+  .cardContent {
+    padding: 25px 20px;
+  }
+  
+  .cardHeader h3 {
+    font-size: 1.5rem;
+  }
+  
+  .priceAmount {
+    font-size: 1.8rem;
+  }
+  
+  .bookNowBtn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  
+  .sliderNavigation {
+    gap: 20px;
+  }
+  
+  .sliderBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Step Cards Section */
+.stepCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.stepCard {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid #f0f0f0;
+  animation: slideInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.stepCard:nth-child(1) { animation-delay: 0.1s; }
+.stepCard:nth-child(2) { animation-delay: 0.2s; }
+.stepCard:nth-child(3) { animation-delay: 0.3s; }
+.stepCard:nth-child(4) { animation-delay: 0.4s; }
+.stepCard:nth-child(5) { animation-delay: 0.5s; }
+.stepCard:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stepCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.stepCard:hover::before {
+  transform: scaleX(1);
+}
+
+.stepNumber {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #DEBA58, #DEBA58);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.stepIcon {
+  font-size: 4rem;
+  margin: 20px 0;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: all 0.3s ease;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.stepCard:hover .stepIcon {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+.stepCard h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #DEBA58, #DEBA58);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.stepCard:hover h3 {
+  transform: scale(1.05);
+}
+
+.stepCard p {
+  color: #6c757d;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.stepCard:hover p {
+  color: #495057;
+}
+
+/* Floating Animation for Cards */
+.stepCard:nth-child(odd) {
+  animation: slideInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
+}
+
+.stepCard:nth-child(even) {
+  animation: slideInUp 0.8s ease-out forwards, float 6s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive Design for Step Cards */
+@media (max-width: 768px) {
+  .stepCardsContainer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .stepCard {
+    padding: 30px 25px;
+  }
+  
+  .stepIcon {
+    font-size: 3rem;
+  }
+  
+  .stepCard h3 {
+    font-size: 1.3rem;
+  }
+  
+  .stepCard p {
+    font-size: 0.95rem;
+  }
+  
+  .stepNumber {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Tour Cards with Hover Effect */
+.tourCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.tourCardHover {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid #f0f0f0;
+  animation: slideInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+  position: relative;
+  height: 400px;
+}
+
+.tourCardHover:nth-child(1) { animation-delay: 0.1s; }
+.tourCardHover:nth-child(2) { animation-delay: 0.2s; }
+.tourCardHover:nth-child(3) { animation-delay: 0.3s; }
+.tourCardHover:nth-child(4) { animation-delay: 0.4s; }
+.tourCardHover:nth-child(5) { animation-delay: 0.5s; }
+.tourCardHover:nth-child(6) { animation-delay: 0.6s; }
+
+.tourCardHover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.cardImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.cardHoverImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tourCardHover:hover .cardHoverImage {
+  transform: scale(1.1);
+}
+
+.dayBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  z-index: 2;
+}
+
+.hoverOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0.8);
+  z-index: 3;
+}
+
+.tourCardHover:hover .hoverOverlay {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.overlayContent {
+  text-align: center;
+  padding: 30px;
+  max-width: 280px;
+}
+
+.overlayContent h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #DEBA58, #DEBA58);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.overlayContent p {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.overlayPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.priceFrom {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.priceAmount {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #DEBA58;
+  line-height: 1;
+}
+
+.pricePer {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.overlayBtn {
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.overlayBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.cardInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 25px;
+  z-index: 2;
+}
+
+.cardInfo h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.cardInfo p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.cardPrice {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.cardPrice .priceFrom {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cardPrice .priceAmount {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffd700;
+  line-height: 1;
+}
+
+.cardPrice .pricePer {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Floating Animation for Cards */
+.tourCardHover:nth-child(odd) {
+  animation: slideInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
+}
+
+.tourCardHover:nth-child(even) {
+  animation: slideInUp 0.8s ease-out forwards, float 6s ease-in-out infinite reverse;
+}
+
+/* Responsive Design for Tour Cards */
+@media (max-width: 768px) {
+  .tourCardsGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .tourCardHover {
+    height: 350px;
+  }
+  
+  .overlayContent {
+    padding: 20px;
+  }
+  
+  .overlayContent h3 {
+    font-size: 1.2rem;
+  }
+  
+  .overlayContent p {
+    font-size: 0.9rem;
+  }
+  
+  .priceAmount {
+    font-size: 1.8rem;
+  }
+  
+  .cardInfo {
+    padding: 20px;
+  }
+  
+  .cardInfo h3 {
+    font-size: 1.2rem;
+  }
+  
+  .cardPrice .priceAmount {
+    font-size: 1.3rem;
+  }
+}
+
+/* Image Grid Section */
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 60px;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.imageCard {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+  animation: slideInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* First row: 4 images */
+.imageCard:nth-child(1) { 
+  animation-delay: 0.1s; 
+  grid-column: 1;
+  grid-row: 1;
+}
+.imageCard:nth-child(2) { 
+  animation-delay: 0.2s; 
+  grid-column: 2;
+  grid-row: 1;
+}
+.imageCard:nth-child(3) { 
+  animation-delay: 0.3s; 
+  grid-column: 3;
+  grid-row: 1;
+}
+.imageCard:nth-child(4) { 
+  animation-delay: 0.4s; 
+  grid-column: 4;
+  grid-row: 1;
+}
+
+/* Second row: 4 images */
+.imageCard:nth-child(5) { 
+  animation-delay: 0.5s; 
+  grid-column: 1;
+  grid-row: 2;
+}
+.imageCard:nth-child(6) { 
+  animation-delay: 0.6s; 
+  grid-column: 2;
+  grid-row: 2;
+}
+.imageCard:nth-child(7) { 
+  animation-delay: 0.7s; 
+  grid-column: 3;
+  grid-row: 2;
+}
+.imageCard:nth-child(8) { 
+  animation-delay: 0.8s; 
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.imageCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.gridImage {
+  width: 100%;
+  height: 100%;
+  object-fit:fit;
+  transition: transform 0.4s ease;
+  
+}
+
+.imageCard:hover .gridImage {
+  transform: scale(1.1);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #DEBA58);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0.9);
+}
+
+.imageCard:hover .imageOverlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.imageOverlay h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.imageCard:hover .imageOverlay h3 {
+  transform: translateY(0);
+}
+
+.imageOverlay p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transform: translateY(20px);
+  transition: transform 0.4s ease 0.1s;
+}
+
+.imageCard:hover .imageOverlay p {
+  transform: translateY(0);
+}
+
+/* Floating Animation for Image Cards */
+.imageCard:nth-child(odd) {
+  animation: slideInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
+}
+
+.imageCard:nth-child(even) {
+  animation: slideInUp 0.8s ease-out forwards, float 6s ease-in-out infinite reverse;
+}
+
+/* Responsive Design for Image Grid */
+@media (max-width: 768px) {
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 120vh;
+    width: 100%;
+  }
+  
+  .imageCard {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Mobile layout: 2x4 grid */
+  .imageCard:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .imageCard:nth-child(2) { grid-column: 2; grid-row: 1; }
+  .imageCard:nth-child(3) { grid-column: 1; grid-row: 2; }
+  .imageCard:nth-child(4) { grid-column: 2; grid-row: 2; }
+  .imageCard:nth-child(5) { grid-column: 1; grid-row: 3; }
+  .imageCard:nth-child(6) { grid-column: 2; grid-row: 3; }
+  .imageCard:nth-child(7) { grid-column: 1; grid-row: 4; }
+  .imageCard:nth-child(8) { grid-column: 2; grid-row: 4; }
+  
+  .imageOverlay {
+    padding: 20px;
+  }
+  
+  .imageOverlay h3 {
+    font-size: 1.8rem;
+  }
+  
+  .imageOverlay p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    height: 150vh;
+    width: 100%;
+  }
+  
+  .imageCard {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Mobile layout: 1x8 grid */
+  .imageCard:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .imageCard:nth-child(2) { grid-column: 1; grid-row: 2; }
+  .imageCard:nth-child(3) { grid-column: 1; grid-row: 3; }
+  .imageCard:nth-child(4) { grid-column: 1; grid-row: 4; }
+  .imageCard:nth-child(5) { grid-column: 1; grid-row: 5; }
+  .imageCard:nth-child(6) { grid-column: 1; grid-row: 6; }
+  .imageCard:nth-child(7) { grid-column: 1; grid-row: 7; }
+  .imageCard:nth-child(8) { grid-column: 1; grid-row: 8; }
+  
+  .imageOverlay h3 {
+    font-size: 1.5rem;
+  }
+  
+  .imageOverlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Testimonials */
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.testimonialCard {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.testimonialHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(102, 126, 234, 0.2);
+}
+
+.personName {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.personMeta {
+  display: block;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.comment {
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 480px) {
+  .avatar { width: 56px; height: 56px; }
+  .personName { font-size: 1rem; }
+  .comment { font-size: 0.95rem; }
+}
+
+/* Testimonials Slider */
+.testimonialsSlider {
+  margin-top: 24px;
+}
+
+.testimonialsContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonialsTrack {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.testimonialSlide {
+  flex: 0 0 100%;
+  padding: 10px 0;
+}
+
+.testimonialsNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.testimonialsBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #DEBA58 0%, #DEBA58 100%);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.testimonialsBtn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(102, 126, 234, 0.35); }
+.testimonialsBtn:active { transform: translateY(0); box-shadow: 0 8px 16px rgba(102, 126, 234, 0.25); }
+
+.testimonialsDots {
+  display: flex;
+  gap: 8px;
+}
+
+.testimonialDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.testimonialDot:hover { transform: scale(1.15); }
+.testimonialDot.active { background: #DEBA58; }
+
+/* Two-up slide layout */
+.testimonialSlideInner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .testimonialSlideInner {
+    grid-template-columns: 1fr;
+  }
+}
